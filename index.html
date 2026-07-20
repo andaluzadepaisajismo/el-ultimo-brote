@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+  <meta name="theme-color" content="#17251f">
+  <title>El Último Brote</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main id="gameWrap">
+    <canvas id="game" aria-label="El Último Brote"></canvas>
+    <section id="start" class="panel">
+      <div class="seed">🌱</div>
+      <p class="eyebrow">UN MUNDO SIN COLOR</p>
+      <h1>El Último<br><span>Brote</span></h1>
+      <p>Devuelve la vida al último bosque.<br>Arrastra el dedo para guiar tus raíces.</p>
+      <button id="play">DESPERTAR</button>
+    </section>
+    <section id="end" class="panel hidden">
+      <div class="seed">🦋</div>
+      <p class="eyebrow">BOSQUE RECUPERADO</p>
+      <h2>La vida<br><span>ha vuelto</span></h2>
+      <p id="result"></p>
+      <button id="again">JUGAR OTRA VEZ</button>
+    </section>
+    <div id="hud" class="hidden">
+      <div class="topline"><span>BOSQUE QUEMADO</span><span id="pct">0%</span></div>
+      <div class="bar"><i id="fill"></i></div>
+      <div class="hint" id="hint">MUEVE EL JOYSTICK · PULSA RAÍZ</div>
+    </div>
+    <div id="controls" class="hidden">
+      <div id="joystick"><i id="stick"></i></div>
+      <button id="rootPower"><span>🌿</span><small>RAÍZ</small></button>
+    </div>
+  </main>
+  <script src="game.js"></script>
+</body>
+</html>
