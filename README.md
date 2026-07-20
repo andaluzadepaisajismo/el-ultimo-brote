@@ -2,4 +2,4 @@
 
 Juego móvil táctil con joystick y poder de raíces.
 
-Publicado mediante GitHub Pages.
+Publicado gratuitamente mediante GitHub Pages. 🌱
